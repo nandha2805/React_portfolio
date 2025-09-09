@@ -1,3 +1,4 @@
+import cvPath from "../assets/Nanthakumar-cv.pdf";
 export const SITE = {
   name: "Nanthakumar R",
   role: "Frontend Developer & UI/UX Designer",

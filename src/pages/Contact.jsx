@@ -1,6 +1,7 @@
 import React from "react";
 import { SITE } from "../data/site";
 import { motion } from "framer-motion";
+import CVButton from "../components/CVButton";  // ✅ Reusable button
 
 export default function Contact() {
   return (
@@ -60,14 +61,9 @@ export default function Contact() {
             >
               LinkedIn
             </motion.a>
-            <motion.a
-              whileHover={{ scale: 1.08 }}
-              href={SITE.cvPath}
-              download
-              className="px-3 py-1.5 rounded-full bg-gray-900 text-white dark:bg-white dark:text-gray-900"
-            >
-              Download CV
-            </motion.a>
+            <motion.div whileHover={{ scale: 1.05 }}>
+              <CVButton /> {/* ✅ Reused CV button */}
+            </motion.div>
           </div>
         </motion.div>
 
