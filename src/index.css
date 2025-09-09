@@ -1,0 +1,41 @@
+@tailwind base;
+@tailwind components;
+@tailwind utilities;
+
+/* ===== Custom Base Styles ===== */
+@layer base {
+ body {
+  @apply bg-gradient-to-br from-[#fdfcfb] to-[#e2d1c3];
+}
+
+
+  h1, h2, h3, h4 {
+    @apply font-bold text-gray-900;
+  }
+}
+
+/* ===== Custom Components ===== */
+@layer components {
+  .container {
+    @apply max-w-6xl mx-auto px-4;
+  }
+
+  .prose {
+    @apply text-gray-700 leading-relaxed;
+  }
+}
+
+/* ===== Utilities Override ===== */
+@layer utilities {
+  .btn {
+    @apply inline-block px-4 py-2 rounded-lg font-medium transition;
+  }
+
+  .btn-primary {
+    @apply bg-gray-900 text-white hover:bg-gray-700;
+  }
+
+  .btn-outline {
+    @apply border border-gray-300 text-gray-700 hover:bg-gray-100;
+  }
+}
